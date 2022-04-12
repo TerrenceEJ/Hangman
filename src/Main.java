@@ -24,7 +24,7 @@ public class Main {
             word.add(i);
             prog.add(i);
         }
-        System.out.println(prog);
+
         for (int i = 0; i < prog.size(); i++) {
             prog.set(i, '_');
         }
