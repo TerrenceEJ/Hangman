@@ -2,9 +2,9 @@ import java.util.*;
 import static java.lang.System.exit;
 
 public class Main {
-    static List<String> given = new ArrayList<>(6);
-    static List<String> nGiven = new ArrayList<>(1);
-    static List<Character> word = new ArrayList<>();
+    public static List<String> given = new ArrayList<>(6);
+    public static List<String> nGiven = new ArrayList<>(1);
+    public static List<Character> word = new ArrayList<>();
 
 
     public static void main(String[] args) {
@@ -96,7 +96,7 @@ public class Main {
         }
     }
 
-    private static String change(ArrayList prog){
+    public static String change(ArrayList prog){
         String changed = prog.toString();
         StringBuilder sb = new StringBuilder();
         sb.append(changed);
@@ -107,7 +107,7 @@ public class Main {
         return newChanged;
     }
 
-    private static Character test(String check){
+    public static Character test(String check){
         char con = check.charAt(0);
         List<Character> guess = Arrays.asList(con);
         Character letter = 'x';
